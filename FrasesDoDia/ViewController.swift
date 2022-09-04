@@ -16,12 +16,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    }
-
-    @IBAction func botaoNovaFrase(_ sender: Any) {
+        
+        //Frases
         fraseArray.append("As pessoas costumam dizer que a motivação não dura sempre. Bem, nem o efeito do banho, por isso recomenda-se diariamente.")
         fraseArray.append("A verdadeira motivação vem de realização, desenvolvimento pessoal, satisfação no trabalho e reconhecimento.")
         fraseArray.append("No meio da dificuldade encontra-se a oportunidade.")
+    }
+
+    @IBAction func botaoNovaFrase(_ sender: Any) {
         
         legendaFrase.text = fraseArray[Int(arc4random_uniform(3))]
     }
